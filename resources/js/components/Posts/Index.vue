@@ -32,23 +32,16 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                posts: [] 
-            }
-        },
+import { onMounted } from "vue"
+import usePosts from '../../composables/posts'
 
-        mounted() {
-            this.fetchPosts()
-        },
+export default {
+    setup() {
+        const { posts, getPosts } = usePosts()
+        onMounted(getPosts)
 
-        methods: {
-            fetchPosts() {
-                axios.get('/api/posts')
-                .then(response => this.posts = response.data)
-                .catch(error => console.log(error))
-            }
-        }
+        return { posts }
     }
+}
+
 </script>
