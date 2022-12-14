@@ -19615,7 +19615,7 @@ function usePosts() {
           switch (_context.prev = _context.next) {
             case 0:
               axios__WEBPACK_IMPORTED_MODULE_1__["default"].get('/api/posts').then(function (response) {
-                posts.value = response.data;
+                posts.value = response.data.data;
               });
             case 1:
             case "end":
