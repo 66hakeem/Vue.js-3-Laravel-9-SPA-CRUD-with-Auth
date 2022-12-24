@@ -5,12 +5,12 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
-use App\Http\Resources\PostResource; 
+use App\Http\Resources\PostResource;
 
 
 class PostController extends Controller
 {
-    public function index() 
+    public function index()
     {
         $orderColumn = request('order_column', 'created_at');
         if (!in_array($orderColumn, ['id', 'title', 'created_at'])) {
@@ -25,7 +25,7 @@ class PostController extends Controller
             $query->where('category_id', \request('category'));
         })
         ->orderBy($orderColumn, $orderDirection)
-        ->paginate(2);
-        return PostResource::collection($posts); 
+        ->paginate(10);
+        return PostResource::collection($posts);
     }
 }
