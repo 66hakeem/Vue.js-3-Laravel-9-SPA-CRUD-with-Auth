@@ -715,6 +715,9 @@ video {
 }.bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }.fill-current {
   fill: currentColor;
 }.p-6 {
@@ -753,6 +756,9 @@ video {
 }.py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }.pl-3 {
   padding-left: 0.75rem;
 }.pr-4 {
