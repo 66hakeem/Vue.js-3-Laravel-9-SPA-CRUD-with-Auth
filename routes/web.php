@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::view(uri: '/', view:'dashboard')->name(name:'dashboard');
+Route::view(uri: '/{any?}', view:'dashboard')
+    ->name(name:'dashboard')
+    ->where(name:'any', expression: '.*');
 
