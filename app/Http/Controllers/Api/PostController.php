@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StorePostRequest;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Http\Resources\PostResource;
@@ -27,5 +28,12 @@ class PostController extends Controller
         ->orderBy($orderColumn, $orderDirection)
         ->paginate(10);
         return PostResource::collection($posts);
+    }
+
+    public function store(StorePostRequest $request)
+    {
+        $post = Post::create($request->validated());
+
+        return new PostResource($post);
     }
 }

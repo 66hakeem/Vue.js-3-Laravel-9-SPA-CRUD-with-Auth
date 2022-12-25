@@ -712,18 +712,18 @@ video {
 }.bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }.bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }.fill-current {
   fill: currentColor;
-}.p-6 {
-  padding: 1.5rem;
 }.p-2 {
   padding: 0.5rem;
+}.p-6 {
+  padding: 1.5rem;
 }.p-4 {
   padding: 1rem;
 }.px-4 {
@@ -735,9 +735,6 @@ video {
 }.px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }.py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -753,12 +750,15 @@ video {
 }.py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+}.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }.px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }.pl-3 {
   padding-left: 0.75rem;
 }.pr-4 {
@@ -787,15 +787,15 @@ video {
 }.text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }.text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }.text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }.font-medium {
   font-weight: 500;
 }.font-semibold {
@@ -806,10 +806,10 @@ video {
   text-transform: uppercase;
 }.leading-5 {
   line-height: 1.25rem;
-}.leading-tight {
-  line-height: 1.25;
 }.leading-7 {
   line-height: 1.75rem;
+}.leading-tight {
+  line-height: 1.25;
 }.leading-4 {
   line-height: 1rem;
 }.tracking-widest {
@@ -828,12 +828,12 @@ video {
 }.text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }.text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }.text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
