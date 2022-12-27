@@ -1170,7 +1170,9 @@ video {
   }.md\:border-l {
     border-left-width: 1px;
   }
-}@media (min-width: 1024px) {.lg\:px-8 {
+}@media (min-width: 1024px) {.lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }.lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
